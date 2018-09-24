@@ -1,6 +1,13 @@
 var correctCount = 0;
 var wrongCount = 0;
 
+function increment(){
+
+    correctCount++;
+    console.log(correctCount);
+    return correctCount;
+  }
+
 var question1 = {
     question: "What color shirt does the protagonist of the original Far Cry(2004) wear?",
     answer1: "Blue",
@@ -68,9 +75,221 @@ var question8 = {
 
 $(document).ready(function() {
 
+
+
 $("#reset").hide();
 $("#questionCard").hide();
 $("#timer").hide();
+
+function toQuestion2() {
+    $("#question").text(question2.question);
+    $("#answer1").text(question2.answer1);
+    $("#answer2").text(question2.answer2);
+    $("#answer3").text(question2.answer3);
+    $("#answer4").text(question2.answer4);
+
+    if ($("#checkbox1").on("click", function() {
+        $( "#checkbox1" ).prop( "checked", false );
+        toQuestion3();
+    }));
+
+    if ($("#checkbox2").on("click", function() {
+        $( "#checkbox2" ).prop( "checked", false );
+        toQuestion3();
+    }));
+
+    if ($("#checkbox3").on("click", function() {
+        $( "#checkbox3" ).prop( "checked", false );
+        increment();
+        toQuestion3();
+    }));
+
+    if ($("#checkbox4").on("click", function() {
+        $( "#checkbox4" ).prop( "checked", false );
+        toQuestion3();
+    }));
+    };
+
+    function toQuestion3() {
+        $("#question").text(question3.question);
+        $("#answer1").text(question3.answer1);
+        $("#answer2").text(question3.answer2);
+        $("#answer3").text(question3.answer3);
+        $("#answer4").text(question3.answer4);
+    
+        if ($("#checkbox1").on("click", function() {
+            $( "#checkbox1" ).prop( "checked", false );
+            increment();
+            toQuestion4();
+        }));
+    
+        if ($("#checkbox2").on("click", function() {
+            $( "#checkbox2" ).prop( "checked", false );
+            toQuestion4();
+        }));
+    
+        if ($("#checkbox3").on("click", function() {
+            $( "#checkbox3" ).prop( "checked", false );
+            toQuestion4();
+        }));
+    
+        if ($("#checkbox4").on("click", function() {
+            $( "#checkbox4" ).prop( "checked", false );
+            toQuestion4();
+        }));
+        };
+        function toQuestion4() {
+            $("#question").text(question4.question);
+            $("#answer1").text(question4.answer1);
+            $("#answer2").text(question4.answer2);
+            $("#answer3").text(question4.answer3);
+            $("#answer4").text(question4.answer4);
+        
+            if ($("#checkbox1").on("click", function() {
+                $( "#checkbox1" ).prop( "checked", false );
+                toQuestion5();
+            }));
+        
+            if ($("#checkbox2").on("click", function() {
+                $( "#checkbox2" ).prop( "checked", false );
+                toQuestion5();
+            }));
+        
+            if ($("#checkbox3").on("click", function() {
+                $( "#checkbox3" ).prop( "checked", false );
+                increment();
+                toQuestion5();
+            }));
+        
+            if ($("#checkbox4").on("click", function() {
+                $( "#checkbox4" ).prop( "checked", false );
+                toQuestion5();
+            }));
+            };
+
+            function toQuestion5() {
+                $("#question").text(question5.question);
+                $("#answer1").text(question5.answer1);
+                $("#answer2").text(question5.answer2);
+                $("#answer3").text(question5.answer3);
+                $("#answer4").text(question5.answer4);
+            
+                if ($("#checkbox1").on("click", function() {
+                    $( "#checkbox1" ).prop( "checked", false );
+                    increment();
+                    toQuestion6();
+                }));
+            
+                if ($("#checkbox2").on("click", function() {
+                    $( "#checkbox2" ).prop( "checked", false );
+                    toQuestion6();
+                }));
+            
+                if ($("#checkbox3").on("click", function() {
+                    $( "#checkbox3" ).prop( "checked", false );
+                    toQuestion6();
+                }));
+            
+                if ($("#checkbox4").on("click", function() {
+                    $( "#checkbox4" ).prop( "checked", false );
+                    toQuestion6();
+                }));
+                };
+
+                function toQuestion6() {
+                    $("#question").text(question6.question);
+                    $("#answer1").text(question6.answer1);
+                    $("#answer2").text(question6.answer2);
+                    $("#answer3").text(question6.answer3);
+                    $("#answer4").text(question6.answer4);
+                
+                    if ($("#checkbox1").on("click", function() {
+                        $( "#checkbox1" ).prop( "checked", false );
+                        toQuestion7();
+                    }));
+                
+                    if ($("#checkbox2").on("click", function() {
+                        $( "#checkbox2" ).prop( "checked", false );
+                        toQuestion7();
+                    }));
+                
+                    if ($("#checkbox3").on("click", function() {
+                        $( "#checkbox3" ).prop( "checked", false );
+                        toQuestion7();
+                    }));
+                
+                    if ($("#checkbox4").on("click", function() {
+                        $( "#checkbox4" ).prop( "checked", false );
+                        increment();
+                        toQuestion7();
+                    }));
+                    };
+
+                    function toQuestion7() {
+                        $("#question").text(question7.question);
+                        $("#answer1").text(question7.answer1);
+                        $("#answer2").text(question7.answer2);
+                        $("#answer3").text(question7.answer3);
+                        $("#answer4").text(question7.answer4);
+                    
+                        if ($("#checkbox1").on("click", function() {
+                            $( "#checkbox1" ).prop( "checked", false );
+                            increment();
+                            toQuestion8();
+                        }));
+                    
+                        if ($("#checkbox2").on("click", function() {
+                            $( "#checkbox2" ).prop( "checked", false );
+                            toQuestion8();
+                        }));
+                    
+                        if ($("#checkbox3").on("click", function() {
+                            $( "#checkbox3" ).prop( "checked", false );
+                            toQuestion8();
+                        }));
+                    
+                        if ($("#checkbox4").on("click", function() {
+                            $( "#checkbox4" ).prop( "checked", false );
+                            toQuestion8();
+                        }));
+                        };
+
+                        function toQuestion8() {
+                            $("#question").text(question8.question);
+                            $("#answer1").text(question8.answer1);
+                            $("#answer2").text(question8.answer2);
+                            $("#answer3").text(question8.answer3);
+                            $("#answer4").text(question8.answer4);
+                        
+                            if ($("#checkbox1").on("click", function() {
+                                $( "#checkbox1" ).prop( "checked", false );
+                                toOutro();
+                            }));
+                        
+                            if ($("#checkbox2").on("click", function() {
+                                $( "#checkbox2" ).prop( "checked", false );
+                                toOutro();
+                            }));
+                        
+                            if ($("#checkbox3").on("click", function() {
+                                $( "#checkbox3" ).prop( "checked", false );
+                                toOutro();
+                            }));
+                        
+                            if ($("#checkbox4").on("click", function() {
+                                $( "#checkbox4" ).prop( "checked", false );
+                                toOutro();
+                            }));
+                            };
+
+                            function toOutro() {
+                                increment();
+                                $("#outro").html("Congrats you have finished the quiz, here is your score:" + " " + correctCount.toString());
+                                $("#questionCard").hide();
+                                $("#timer").hide();
+                            }
+
+    
 
 $("#start").on("click", function() {
     
@@ -86,12 +305,25 @@ $("#start").on("click", function() {
     $("#answer3").text(question1.answer3);
     $("#answer4").text(question1.answer4);
 
-    // if ($("#checkbox1").on("click", function() {
-    //     toQuestion2;
-    // }));
-
     if ($("#checkbox1").on("click", function() {
-        $("#answer1").text(question2.answer2);
+        $( "#checkbox1" ).prop( "checked", false );
+        toQuestion2();
+    }));
+
+    if ($("#checkbox2").on("click", function() {
+        $( "#checkbox2" ).prop( "checked", false );
+        increment();
+        toQuestion2();
+    }));
+
+    if ($("#checkbox3").on("click", function() {
+        $( "#checkbox3" ).prop( "checked", false );
+        toQuestion2();
+    }));
+
+    if ($("#checkbox4").on("click", function() {
+        $( "#checkbox4" ).prop( "checked", false );
+        toQuestion2();
     }));
 
     
