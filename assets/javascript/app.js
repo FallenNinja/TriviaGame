@@ -1,11 +1,11 @@
 var correctCount = 0;
 var wrongCount = 0;
 
-function increment(){
 
-    correctCount++;
-    console.log(correctCount);
-    return correctCount;
+
+  function exit()
+  {
+     throw new Error('This is not an error. This is just to abort javascript');
   }
 
 var question1 = {
@@ -14,6 +14,10 @@ var question1 = {
     answer2: "Red",
     answer3: "Yellow",
     answer4: "Green",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 var question2 = {
@@ -22,6 +26,10 @@ var question2 = {
     answer2: "Cold",
     answer3: "Milaria",
     answer4: "The Shits",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 var question3 = {
@@ -30,6 +38,10 @@ var question3 = {
     answer2: "Vaas Montenegro",
     answer3: "Buck Hughes",
     answer4: "Citra",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 var question4 = {
@@ -38,6 +50,10 @@ var question4 = {
     answer2: "Vietnam",
     answer3: "Vietnam War II",
     answer4: "Apocalypse",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 var question5 = {
@@ -46,6 +62,10 @@ var question5 = {
     answer2: "Americas",
     answer3: "England",
     answer4: "Moon",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 var question6 = {
@@ -54,6 +74,10 @@ var question6 = {
     answer2: "Far Cry 2(2008)",
     answer3: "Far Cry 3(2012)",
     answer4: "Far Cry 4(2014)",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 var question7 = {
@@ -62,6 +86,10 @@ var question7 = {
     answer2: "Dallas, Texas",
     answer3: "New York, New York",
     answer4: "Canada",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 var question8 = {
@@ -70,6 +98,10 @@ var question8 = {
     answer2: "All",
     answer3: "All",
     answer4: "All",
+    increment : function(){
+        correctCount++;
+        console.log(correctCount);
+      }
 };
 
 
@@ -88,23 +120,22 @@ function toQuestion2() {
     $("#answer3").text(question2.answer3);
     $("#answer4").text(question2.answer4);
 
-    if ($("#checkbox1").on("click", function() {
+     if ($("#checkbox1").on("click", function() {
         $( "#checkbox1" ).prop( "checked", false );
         toQuestion3();
     }));
 
-    if ($("#checkbox2").on("click", function() {
+     if ($("#checkbox2").on("click", function() {
         $( "#checkbox2" ).prop( "checked", false );
         toQuestion3();
     }));
 
-    if ($("#checkbox3").on("click", function() {
+     if ($("#checkbox3").on("click", function() {
         $( "#checkbox3" ).prop( "checked", false );
-        increment();
         toQuestion3();
     }));
 
-    if ($("#checkbox4").on("click", function() {
+     if ($("#checkbox4").on("click", function() {
         $( "#checkbox4" ).prop( "checked", false );
         toQuestion3();
     }));
@@ -117,23 +148,22 @@ function toQuestion2() {
         $("#answer3").text(question3.answer3);
         $("#answer4").text(question3.answer4);
     
-        if ($("#checkbox1").on("click", function() {
+         if ($("#checkbox1").on("click", function() {
             $( "#checkbox1" ).prop( "checked", false );
-            increment();
             toQuestion4();
         }));
     
-        if ($("#checkbox2").on("click", function() {
+         if ($("#checkbox2").on("click", function() {
             $( "#checkbox2" ).prop( "checked", false );
             toQuestion4();
         }));
     
-        if ($("#checkbox3").on("click", function() {
+         if ($("#checkbox3").on("click", function() {
             $( "#checkbox3" ).prop( "checked", false );
             toQuestion4();
         }));
     
-        if ($("#checkbox4").on("click", function() {
+         if ($("#checkbox4").on("click", function() {
             $( "#checkbox4" ).prop( "checked", false );
             toQuestion4();
         }));
@@ -145,23 +175,22 @@ function toQuestion2() {
             $("#answer3").text(question4.answer3);
             $("#answer4").text(question4.answer4);
         
-            if ($("#checkbox1").on("click", function() {
+             if ($("#checkbox1").on("click", function() {
                 $( "#checkbox1" ).prop( "checked", false );
                 toQuestion5();
             }));
         
-            if ($("#checkbox2").on("click", function() {
+             if ($("#checkbox2").on("click", function() {
                 $( "#checkbox2" ).prop( "checked", false );
                 toQuestion5();
             }));
         
-            if ($("#checkbox3").on("click", function() {
+             if ($("#checkbox3").on("click", function() {
                 $( "#checkbox3" ).prop( "checked", false );
-                increment();
                 toQuestion5();
             }));
         
-            if ($("#checkbox4").on("click", function() {
+             if ($("#checkbox4").on("click", function() {
                 $( "#checkbox4" ).prop( "checked", false );
                 toQuestion5();
             }));
@@ -174,23 +203,22 @@ function toQuestion2() {
                 $("#answer3").text(question5.answer3);
                 $("#answer4").text(question5.answer4);
             
-                if ($("#checkbox1").on("click", function() {
+                 if ($("#checkbox1").on("click", function() {
                     $( "#checkbox1" ).prop( "checked", false );
-                    increment();
                     toQuestion6();
                 }));
             
-                if ($("#checkbox2").on("click", function() {
+                 if ($("#checkbox2").on("click", function() {
                     $( "#checkbox2" ).prop( "checked", false );
                     toQuestion6();
                 }));
             
-                if ($("#checkbox3").on("click", function() {
+                 if ($("#checkbox3").on("click", function() {
                     $( "#checkbox3" ).prop( "checked", false );
                     toQuestion6();
                 }));
             
-                if ($("#checkbox4").on("click", function() {
+                 if ($("#checkbox4").on("click", function() {
                     $( "#checkbox4" ).prop( "checked", false );
                     toQuestion6();
                 }));
@@ -203,24 +231,23 @@ function toQuestion2() {
                     $("#answer3").text(question6.answer3);
                     $("#answer4").text(question6.answer4);
                 
-                    if ($("#checkbox1").on("click", function() {
+                     if ($("#checkbox1").on("click", function() {
                         $( "#checkbox1" ).prop( "checked", false );
                         toQuestion7();
                     }));
                 
-                    if ($("#checkbox2").on("click", function() {
+                     if ($("#checkbox2").on("click", function() {
                         $( "#checkbox2" ).prop( "checked", false );
                         toQuestion7();
                     }));
                 
-                    if ($("#checkbox3").on("click", function() {
+                     if ($("#checkbox3").on("click", function() {
                         $( "#checkbox3" ).prop( "checked", false );
                         toQuestion7();
                     }));
                 
-                    if ($("#checkbox4").on("click", function() {
+                     if ($("#checkbox4").on("click", function() {
                         $( "#checkbox4" ).prop( "checked", false );
-                        increment();
                         toQuestion7();
                     }));
                     };
@@ -232,23 +259,22 @@ function toQuestion2() {
                         $("#answer3").text(question7.answer3);
                         $("#answer4").text(question7.answer4);
                     
-                        if ($("#checkbox1").on("click", function() {
+                         if ($("#checkbox1").on("click", function() {
                             $( "#checkbox1" ).prop( "checked", false );
-                            increment();
                             toQuestion8();
                         }));
                     
-                        if ($("#checkbox2").on("click", function() {
+                         if ($("#checkbox2").on("click", function() {
                             $( "#checkbox2" ).prop( "checked", false );
                             toQuestion8();
                         }));
                     
-                        if ($("#checkbox3").on("click", function() {
+                         if ($("#checkbox3").on("click", function() {
                             $( "#checkbox3" ).prop( "checked", false );
                             toQuestion8();
                         }));
                     
-                        if ($("#checkbox4").on("click", function() {
+                         if ($("#checkbox4").on("click", function() {
                             $( "#checkbox4" ).prop( "checked", false );
                             toQuestion8();
                         }));
@@ -261,29 +287,28 @@ function toQuestion2() {
                             $("#answer3").text(question8.answer3);
                             $("#answer4").text(question8.answer4);
                         
-                            if ($("#checkbox1").on("click", function() {
+                             if ($("#checkbox1").on("click", function() {
                                 $( "#checkbox1" ).prop( "checked", false );
                                 toOutro();
                             }));
                         
-                            if ($("#checkbox2").on("click", function() {
+                             if ($("#checkbox2").on("click", function() {
                                 $( "#checkbox2" ).prop( "checked", false );
                                 toOutro();
                             }));
                         
-                            if ($("#checkbox3").on("click", function() {
+                             if ($("#checkbox3").on("click", function() {
                                 $( "#checkbox3" ).prop( "checked", false );
                                 toOutro();
                             }));
                         
-                            if ($("#checkbox4").on("click", function() {
+                             if ($("#checkbox4").on("click", function() {
                                 $( "#checkbox4" ).prop( "checked", false );
                                 toOutro();
                             }));
                             };
 
                             function toOutro() {
-                                increment();
                                 $("#outro").html("Congrats you have finished the quiz, here is your score:" + " " + correctCount.toString());
                                 $("#questionCard").hide();
                                 $("#timer").hide();
@@ -305,26 +330,28 @@ $("#start").on("click", function() {
     $("#answer3").text(question1.answer3);
     $("#answer4").text(question1.answer4);
 
-    if ($("#checkbox1").on("click", function() {
+     if ($("#checkbox1").on("click", function() {
         $( "#checkbox1" ).prop( "checked", false );
         toQuestion2();
     }));
 
-    if ($("#checkbox2").on("click", function() {
+     if ($("#checkbox2").on("click", function() {
         $( "#checkbox2" ).prop( "checked", false );
-        increment();
+        question1.increment();
         toQuestion2();
     }));
 
-    if ($("#checkbox3").on("click", function() {
+     if ($("#checkbox3").on("click", function() {
         $( "#checkbox3" ).prop( "checked", false );
         toQuestion2();
     }));
 
-    if ($("#checkbox4").on("click", function() {
+     if ($("#checkbox4").on("click", function() {
         $( "#checkbox4" ).prop( "checked", false );
         toQuestion2();
     }));
+
+    stop();
 
     
 
